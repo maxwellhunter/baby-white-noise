@@ -1,6 +1,6 @@
 <template>
   <div class="container" :style="determineStyle">
-    <div v-for="noiseType in noiseTypes" @click="setNoiseType(noiseType)">
+    <div v-for="noiseType in noiseTypes" @click="setNoiseType(noiseType)" class="color-selection-item">
       {{noiseType}}
     </div>
     <button @click="pressButton()">
@@ -59,6 +59,9 @@
 </script>
 
 <style>
+  .color-selection-item{
+    cursor:pointer;
+  }
   .container {
     margin: 0 auto;
     min-height: 100vh;
