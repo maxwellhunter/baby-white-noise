@@ -19,5 +19,3 @@ jobs:
         yarn --version
         yarn
         yarn test
-      env:
-        CI: true
