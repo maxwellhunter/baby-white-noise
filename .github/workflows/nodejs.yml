@@ -16,6 +16,7 @@ jobs:
       uses: comchangs/action-yarn@v0.1-beta
     - name: yarn install and test
       run: |
+        yarn --version
         yarn
         yarn test
       env:
